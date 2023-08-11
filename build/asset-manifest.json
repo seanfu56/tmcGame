@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tmcGame/static/css/main.073c9b0a.css",
-    "main.js": "/tmcGame/static/js/main.728662f6.js",
+    "main.js": "/tmcGame/static/js/main.17908284.js",
     "static/js/787.ae6d64bf.chunk.js": "/tmcGame/static/js/787.ae6d64bf.chunk.js",
     "index.html": "/tmcGame/index.html",
     "main.073c9b0a.css.map": "/tmcGame/static/css/main.073c9b0a.css.map",
-    "main.728662f6.js.map": "/tmcGame/static/js/main.728662f6.js.map",
+    "main.17908284.js.map": "/tmcGame/static/js/main.17908284.js.map",
     "787.ae6d64bf.chunk.js.map": "/tmcGame/static/js/787.ae6d64bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.728662f6.js"
+    "static/js/main.17908284.js"
   ]
 }
