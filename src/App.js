@@ -7,12 +7,13 @@ function App() {
       <header className="App-header">
         <p>台大傳醫讀書會遊戲</p>
       </header>
-      <Router>
+      <input placeholder="input password" />
+      {/* <Router>
         <Routes>
           <Route path="/organ" element={<p>六腑</p>} />
           <Route path="/disease" element={<p>病因</p>} />
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 }
