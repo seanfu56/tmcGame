@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -7,6 +7,12 @@ function App() {
       <header className="App-header">
         <p>台大傳醫讀書會遊戲</p>
       </header>
+      <Router>
+        <Routes>
+          <Route path="/organ" element={<p>六腑</p>} />
+          <Route path="/disease" element={<p>病因</p>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
