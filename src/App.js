@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
-  let [game, setGame] = useState("");
-
+  const [game, setGame] = useState("");
+  const navigate = useNavigate();
   return (
     <div className="App">
       <button
@@ -25,12 +26,19 @@ function App() {
       ) : (
         <input placeholder="input password" />
       )}
-      {/* <Router>
+      <button
+        onClick={() => {
+          navigate("/organ");
+        }}
+      >
+        to route
+      </button>
+      <Router>
         <Routes>
           <Route path="/organ" element={<p>六腑</p>} />
           <Route path="/disease" element={<p>病因</p>} />
         </Routes>
-      </Router> */}
+      </Router>
     </div>
   );
 }
