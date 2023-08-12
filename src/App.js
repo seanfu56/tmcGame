@@ -7,7 +7,7 @@ function App() {
   const [game, setGame] = useState("");
   const navigate = useNavigate();
   return (
-    <div className="App">
+    <div>
       <button
         onClick={() => {
           if (game === "") {
@@ -19,13 +19,6 @@ function App() {
       >
         game
       </button>
-      {game === "" ? (
-        <header className="App-header">
-          <p>台大傳醫讀書會遊戲</p>
-        </header>
-      ) : (
-        <input placeholder="input password" />
-      )}
       <button
         onClick={() => {
           navigate("/organ");
@@ -33,6 +26,14 @@ function App() {
       >
         to route
       </button>
+      {game === "" ? (
+        <header className="App-header">
+          <p>台大傳醫讀書會遊戲</p>
+        </header>
+      ) : (
+        <input placeholder="input password" />
+      )}
+
       <Router>
         <Routes>
           <Route path="/organ" element={<p>六腑</p>} />
